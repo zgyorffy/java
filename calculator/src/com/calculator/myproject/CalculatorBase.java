@@ -1,4 +1,4 @@
-package com.experiment.myproject;
+package com.calculator.myproject;
 
 public abstract class CalculatorBase {
 	

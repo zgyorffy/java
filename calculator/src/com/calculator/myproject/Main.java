@@ -1,4 +1,4 @@
-package com.experiment.myproject;
+package com.calculator.myproject;
 
 public class Main {
 
@@ -20,6 +20,14 @@ public class Main {
 		
 		System.out.print("result: ");
 		System.out.println(c2.getResult());
+		
+		a = 5;
+		b = 3;
+		CalculatorBase c3 = new Divider(a, b);
+		c3.calculate();
+		
+		System.out.print("result: ");
+		System.out.println(c3.getResult());
 	}
 
 }

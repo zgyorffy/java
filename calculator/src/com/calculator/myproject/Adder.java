@@ -1,4 +1,4 @@
-package com.experiment.myproject;
+package com.calculator.myproject;
 
 public class Adder extends CalculatorBase{
 	
@@ -12,6 +12,4 @@ public class Adder extends CalculatorBase{
 		int value = getVal1() + getVal2();
 		setResult(value);
 	}
-	
-
 }
