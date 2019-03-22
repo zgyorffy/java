@@ -7,6 +7,7 @@ public class Divider extends CalculatorBase {
 		super(val1,val2);
 	}
 	
+	@Override
 	public void calculate() {
 		int value = getVal1() - getVal2();
 		setResult(value);
