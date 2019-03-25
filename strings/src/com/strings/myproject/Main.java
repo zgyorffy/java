@@ -23,6 +23,7 @@ public class Main {
 		System.out.println("stringBuilderMethod");
 		System.out.println("-----------------------");
 		
+		//SrtingBuilder -> built in
 		StringBuilder sb = new StringBuilder(40);
 		ToStringMethodBase s = new ToStringMethodBase(5);
 		String name = "Zsolt";
