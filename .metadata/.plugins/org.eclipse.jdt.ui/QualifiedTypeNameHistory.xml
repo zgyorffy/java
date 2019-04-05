@@ -3,4 +3,7 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.training.myproject.Flight"/>
 <fullyQualifiedTypeName name="com.strings.myproject.ToStringMethodBase"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="com.errorhandling.myproject.InputOutputBase"/>
 </qualifiedTypeNameHistroy>
