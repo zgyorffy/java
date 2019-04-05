@@ -1,5 +1,7 @@
 package com.strings.myproject;
 
+import java.util.StringJoiner;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -15,7 +17,68 @@ public class Main {
 		
 		//StringBuilder -> allocate a buffer string -> will increase if exceeded
 		stringBuilderMethod();
-
+		
+		//StringJoiner method
+		stringJoinerMethod();
+		
+		//StringFormatter method
+		stringFormatter();
+		
+		//stringReplaceAll 
+		stringReplaceAll();
+	}
+	
+	public static void stringReplaceAll() {
+		System.out.println("\n\n");
+		System.out.println("stringReplaceAll");
+		System.out.println("-----------------------");
+		
+		String s1 = "abcd efgaaa";
+		
+		System.out.println(s1);
+		
+		s1 = s1.replaceAll("a", "x");
+		System.out.println(s1);
+		
+	}
+	
+	public static void stringFormatter() {
+		System.out.println("\n\n");
+		System.out.println("stringFormatter");
+		System.out.println("-----------------------");
+		
+		int v1 = 5;
+		int v2 = 6;
+		float v3 = 1.000f;
+		
+		String s1 = String.format("V1: %d, V2: %d, V3: %.1f", v1, v2, v3);
+		
+		System.out.println(s1);
+		
+	}
+	
+	public static void stringJoinerMethod() {
+		System.out.println("\n\n");
+		System.out.println("stringJoinerMethod");
+		System.out.println("-----------------------");
+		
+		StringJoiner sj = new StringJoiner(", ");
+		sj.add("alpha");
+		sj.add("beta");
+		sj.add("gamma");
+		String theResult = sj.toString();
+		
+		System.out.println("string: " + theResult);
+		
+		//Separator, first value, last value
+		StringJoiner sj2 = new StringJoiner(", ","{","}");
+		sj2.add("alpha");
+		sj2.add("beta");
+		sj2.add("gamma");
+		String theResult2 = sj2.toString();
+		
+		System.out.println("string: " + theResult2);
+		
 	}
 	
 	public static void stringBuilderMethod() {
